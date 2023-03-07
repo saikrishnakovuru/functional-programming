@@ -19,7 +19,6 @@ public class ForEachTest {
 		};
 
 		intList.forEach(cons);
-
 		// all the lines from 10 to 19 can be removes and replaced as below
 		
 		intList.forEach(num -> System.out.println("Num in list" + num));

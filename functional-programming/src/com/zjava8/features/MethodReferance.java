@@ -25,7 +25,7 @@ class MyPrinter {
 //				s = s.toLowerCase();
 //			return s;
 //		};
-
+ 
 		Parser p = StringParser::convert;
 //		Stream s= Stream.of(str);
 //		s.map(null)

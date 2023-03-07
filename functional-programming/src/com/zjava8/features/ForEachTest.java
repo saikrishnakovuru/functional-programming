@@ -49,7 +49,6 @@ public class ForEachTest {
 	}
 
 	public static void main(String[] args) {
-
 		ForEachTest test = new ForEachTest();
 		test.consumerAndForEach();
 		test.simpleForEach();

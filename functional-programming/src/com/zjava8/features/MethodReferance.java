@@ -1,7 +1,5 @@
 package com.zjava8.features;
 
-import java.util.stream.Stream;
-
 interface Parser {
 	String parse(String str);
 }

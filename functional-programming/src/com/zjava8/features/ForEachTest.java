@@ -35,11 +35,25 @@ public class ForEachTest {
 		list.stream().forEach(System.out::println);
 	}
 
+	private void passMethodAsAnArgumentIntoForEach() {
+		List<Integer> list = new ArrayList<>();
+		for (int i = 0; i < 5; i++) {
+			list.add(i);
+		}
+
+		list.forEach(this::sopMethod);
+	}
+
+	private void sopMethod(int num) {
+		System.out.println(num);
+	}
+
 	public static void main(String[] args) {
 
 		ForEachTest test = new ForEachTest();
 		test.consumerAndForEach();
 		test.simpleForEach();
+		test.passMethodAsAnArgumentIntoForEach();
 
 	}
 }
